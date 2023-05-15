@@ -1,0 +1,277 @@
+/* Estilos generales */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #333;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: white;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Estilos para el video de presentación */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Proporción 16:9 */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos para el contenido del héroe */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hero-content button:hover {
+  background-color: #555;
+}
+
+/* Estilos para la sección de características */
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.features article {
+  flex-basis: 30%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features article h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.features article img {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.features article p {
+  font-size: 1.0rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+
+/* Estilos para la sección de contacto */
+.contact {
+background-color: #767676;
+padding: 50px 30px;
+}
+
+.contact h2 {
+text-align: center;
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.contact p {
+text-align: center;
+font-size: 1.2rem;
+margin-bottom: 40px;
+}
+
+.contact form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contact label {
+font-size: 1.2rem;
+margin-bottom: 10px;
+}
+
+.contact input,
+.contact textarea {
+padding: 10px;
+margin-bottom: 20px;
+width: 100%;
+border: 2px solid #ccc;
+border-radius: 5px;
+font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+outline: none;
+border-color: #084838;
+}
+
+.contact button[type="submit"] {
+background-color: #084838;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 1.2rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+background-color: #333;
+}
+
+/* Estilos para el pie de página */
+footer {
+background-color: #333;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px;
+font-size: 1.2rem;
+}
+
+.social-links h3,
+.contact-info h3 {
+margin-bottom: 20px;
+}
+
+.social-links ul,
+.contact-info ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+}
+
+.social-links li,
+.contact-info li {
+margin-right: 20px;
+}
+
+.social-links a,
+.contact-info li {
+color: white;
+font-size: 1.2rem;
+}
+
+.social-links a:hover {
+color: #084838;
+}
+
+.contact-info i {
+margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+/* Estilos para la barra de navegación en dispositivos móviles */
+nav ul {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+nav li {
+margin: 10px 0;
+}
+
+/* Estilos para el video de presentación en dispositivos móviles */
+.video-container {
+width: 100%;
+height: auto;
+}
+
+/* Estilos para las características en dispositivos móviles */
+.features article {
+margin-bottom: 40px;
+}
+
+/* Estilos para el formulario de contacto en dispositivos móviles */
+.contact form {
+width: 90%;
+}
+
+/* Estilos para el pie de página en dispositivos móviles */
+footer {
+flex-direction: column;
+text-align: center;
+padding: 50px 0;
+}
+
+.social-links,
+.contact-info {
+margin-bottom: 30px;
+}
+
+.social-links li,
+.contact-info li {
+margin: 0 10px;
+}
+}
